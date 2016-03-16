@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Human-Friendly Configuration</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+
+  
+
+  <link rel="stylesheet" type="text/css" href=".//css/fg.menu.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href=".//css/theme/ui.all.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href=".//css/highlight/default.css"  />
+
+  <link rel="stylesheet" type="text/css" href=".//css/showoff.css" />
+  <link rel="stylesheet" type="text/css" href=".//css/font-awesome-4.4.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src=".//js/jquery-2.1.4.min.js"></script>
+
+  <script type="text/javascript" src=".//js/jquery.cycle.all.js"></script>
+  <script type="text/javascript" src=".//js/jquery-print.js"></script>
+  <script type="text/javascript" src=".//js/jquery.batchImageLoad.js"></script>
+  <script type="text/javascript" src=".//js/jquery.parsequery.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.doubletap-0.1.js"></script>
+  <script type="text/javascript" src=".//js/fg.menu.js"></script>
+  <script type="text/javascript" src=".//js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src=".//js/highlight.pack.js"></script>
+
+  <script type="text/javascript" src=".//js/coffee-script.js"></script>
+
+  <script type="text/javascript" src=".//js/showoff.js"></script>
+
+  
+    
+    <link rel="stylesheet" href=".//file/custom.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+    $(function(){
+      setupPreso(false, './');
+    });
+
+    editUrl  = "";
+
+    keymap = {
+  "space": "NEXT",
+  "d": "DEBUG",
+  "up": "PREV",
+  "left": "PREV",
+  "pageup": "PREV",
+  "down": "NEXT",
+  "right": "NEXT",
+  "pagedown": "NEXT",
+  "r": "RELOAD",
+  "c": "CONTENTS",
+  "t": "CONTENTS",
+  "h": "HELP",
+  "/": "HELP",
+  "?": "HELP",
+  "b": "BLANK",
+  ".": "BLANK",
+  "F": "FOOTER",
+  "f": "FOLLOW",
+  "n": "NOTES",
+  "esc": "CLEAR",
+  "p": "PAUSE",
+  "P": "PRESHOW",
+  "x": "EXECUTE",
+  "f5": "EXECUTE"
+};
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+
+<div id="help">
+  <h1>Showoff Hotkeys</h1>
+  <div>
+    <span class="description">Move to the next slide.</span>
+    <span class="action">NEXT</span>
+    <span class="hotkeys"><span class="key">space</span><span class="key">down</span><span class="key">right</span><span class="key">pagedown</span></span>
+  </div>
+  <div>
+    <span class="description">Move to the previous slide.</span>
+    <span class="action">PREV</span>
+    <span class="hotkeys"><span class="key">up</span><span class="key">left</span><span class="key">pageup</span></span>
+  </div>
+  <div>
+    <span class="description">Show the table of contents menu.</span>
+    <span class="action">CONTENTS</span>
+    <span class="hotkeys"><span class="key">c</span><span class="key">t</span></span>
+  </div>
+  <div>
+    <span class="description">Toggle follow mode.</span>
+    <span class="action">FOLLOW</span>
+    <span class="hotkeys"><span class="key">f</span></span>
+  </div>
+  <div>
+    <span class="description">Show this help dialog.</span>
+    <span class="action">HELP</span>
+    <span class="hotkeys"><span class="key">h</span><span class="key">/</span><span class="key">?</span></span>
+  </div>
+
+  <hr />
+
+  <div>
+    <span class="description">Reload all slides.</span>
+    <span class="action">RELOAD</span>
+    <span class="hotkeys"><span class="key">r</span></span>
+  </div>
+  <div>
+    <span class="description">Blank the screen.</span>
+    <span class="action">BLANK</span>
+    <span class="hotkeys"><span class="key">b</span><span class="key">.</span></span>
+  </div>
+  <div>
+    <span class="description">Toggle the display footer.</span>
+    <span class="action">FOOTER</span>
+    <span class="hotkeys"><span class="key">F</span></span>
+  </div>
+  <div>
+    <span class="description">Toggle notes display.</span>
+    <span class="action">NOTES</span>
+    <span class="hotkeys"><span class="key">n</span></span>
+  </div>
+  <div>
+    <span class="description">Clear code execution results.</span>
+    <span class="action">CLEAR</span>
+    <span class="hotkeys"><span class="key">esc</span></span>
+  </div>
+  <div>
+    <span class="description">Pause the presentation.</span>
+    <span class="action">PAUSE</span>
+    <span class="hotkeys"><span class="key">p</span></span>
+  </div>
+  <div>
+    <span class="description">Display slideshow of <tt>preshow</tt> images on a timer.</span>
+    <span class="action">PRESHOW</span>
+    <span class="hotkeys"><span class="key">P</span></span>
+  </div>
+  <div>
+    <span class="description">Execute the first visible code block.</span>
+    <span class="action">EXECUTE</span>
+    <span class="hotkeys"><span class="key">x</span><span class="key">f5</span></span>
+  </div>
+
+  <hr />
+
+  <div>
+    <span class="description">Show debugging information.</span>
+    <span class="action">DEBUG</span>
+    <span class="hotkeys"><span class="key">d</span></span>
+  </div>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso"><center>loading presentation...</center></div>
+<div id="footer">
+  <span id="followMode"></span>
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+  <span id="slideFilename"></span>
+  <img id="disconnected" src=".//css/disconnected.png" />
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div id="intro_01_intro1" class="slide title" data-transition="none">
+<div class="content title" ref="intro/01_intro/1">
+<h1>Human-Friendly Configuration with Perl 6</h1>
+
+<h2>or How I Learned to Stop Worrying and Love the JSON</h2>
+
+<h3>Michael Heironimus</h3>
+</div>
+</div>
+<div id="intro_01_intro2" class="slide " data-transition="none">
+<div class="content " ref="intro/01_intro/2">
+<h1>A few words about me</h1>
+
+<ul>
+<li>Infrastructure</li>
+<li>The home for your applications!</li>
+<li>Or sometimes the sausage maker.</li>
+</ul>
+</div>
+</div>
+<div id="intro_01_intro3" class="slide " data-transition="none">
+<div class="content " ref="intro/01_intro/3">
+<p><img src="./file/intro/write_code.jpg" width="478" height="600" alt="I don't always write code, but when I do..."></p>
+</div>
+</div>
+<div id="intro_01_intro4" class="slide " data-transition="none">
+<div class="content " ref="intro/01_intro/4">
+<h1>... it's for</h1>
+
+<ul>
+<li>Tools and automation</li>
+<li>Annoyance reduction</li>
+<li>Team enlightenment</li>
+</ul>
+
+<div class="notes">
+
+<p>Some people, especially if they're not very experienced, simply don't think in
+terms of automation. Others approach it in a completely linear manner.</p>
+
+</div>
+</div>
+</div>
+<div id="packer_01_packer1" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="packer/01_packer/1">
+<h1>Packer</h1>
+
+<ul>
+<li>Open source from HashiCorp, just like Vagrant</li>
+<li>Create disk images, Vagrant boxes, Docker images</li>
+<li><a href="http://packer.io/" target="_blank">http://packer.io/</a></li>
+</ul>
+
+<div class="notes">
+
+<p>If you don't know Vagrant, it's automation around copying and configuring VMs
+from images.</p>
+
+<p>Packer creates Docker images without a Dockerfile by running things in the
+image and committing or saving.</p>
+
+</div>
+</div>
+</div>
+<div id="packer_01_packer2" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="packer/01_packer/2">
+<h1>How does packer work?</h1>
+
+<ul>
+<li>Install VM from ISO or import a disk image</li>
+<li>Run setup scripts and tools</li>
+<li>Run optional post-install tasks</li>
+<li>Configured by handwritten JSON file</li>
+</ul>
+
+<div class="notes">
+
+<p>Setup examples: shell scripts, Puppet, Chef, Salt, Ansible, etc.</p>
+
+<p>Post-install examples: Vagrant box package, docker push/tag/etc.</p>
+
+</div>
+</div>
+</div>
+<div id="packer_01_packer3" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="packer/01_packer/3">
+<h1>JSON is machine-friendly, not human-friendly</h1>
+
+<ul>
+<li>Strict syntax even though it's mostly text</li>
+<li>No comments, just app-specific keys for annotations</li>
+<li>CentOS 6/7 build file is 169 lines and 5.5k</li>
+</ul>
+
+<div class="notes">
+
+<p>AWS CloudFormation also has special JSON keys for annotations.</p>
+
+<p>The build file is small in absolute terms, but it's a lot of JSON to manage by
+hand. There is also a second that is slightly larger.</p>
+
+</div>
+</div>
+</div>
+<div id="packer_01_packer4" class="slide smaller" data-transition="none">
+<div class="content smaller" ref="packer/01_packer/4">
+<pre class="highlight"><code class="language-json">{
+  "description": "Build Vagrant-ready CentOS images that look like the official AMIs in the AWS Marketplace.",
+  "builders": [
+    {
+      "name": "centos-6-virtualbox",
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "&lt;tab&gt; text {{user `c6_ks_opts`}} ks=http://{{.HTTPIP}}:{{.HTTPPort}}/{{user `c6_name`}}.ks&lt;enter&gt;&lt;wait&gt;"
+      ],
+      "disk_size": 8192,
+      "export_opts": ["--manifest"],
+      "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+      "guest_os_type": "RedHat_64",
+      "hard_drive_interface": "sata",
+      "headless": "{{user `headless`}}",
+      "http_directory": "http",
+      "iso_checksum": "{{user `c6_iso_checksum`}}",
+      "iso_checksum_type": "sha512",
+      "iso_url": "{{user `c6_iso_path`}}",
+      "output_directory": "builds/{{build_name}}-{{user `stamp`}}",
+      "shutdown_command": "echo 'vagrant' | sudo -S /sbin/halt -h -p",
+      "ssh_password": "vagrant",
+      "ssh_username": "vagrant",
+      "ssh_wait_timeout": "10000s",
+      "vboxmanage": [
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer5" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/5">
+<pre class="highlight"><code class="language-json">        ["modifyvm", "{{.Name}}", "--memory", "1280"],
+        ["modifyvm", "{{.Name}}", "--cpus", "1"],
+        ["modifyvm", "{{.Name}}", "--vram", "12"]
+      ],
+      "vm_name": "{{user `c6_name`}}-{{user `stamp`}}"
+    },
+    {
+      "name": "centos-7-virtualbox",
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "&lt;tab&gt; text {{user `c7_ks_opts`}} ks=http://{{.HTTPIP}}:{{.HTTPPort}}/{{user `c7_name`}}.ks&lt;enter&gt;&lt;wait&gt;"
+      ],
+      "disk_size": 8192,
+      "export_opts": ["--manifest"],
+      "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+      "guest_os_type": "RedHat_64",
+      "hard_drive_interface": "sata",
+      "headless": "{{user `headless`}}",
+      "http_directory": "http",
+      "iso_checksum": "{{user `c7_iso_checksum`}}",
+      "iso_checksum_type": "sha512",
+      "iso_url": "{{user `c7_iso_path`}}",
+      "output_directory": "builds/{{build_name}}-{{user `stamp`}}",
+      "shutdown_command": "echo 'vagrant' | sudo -S /sbin/halt -h -p",
+      "ssh_password": "vagrant",
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer6" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/6">
+<pre class="highlight"><code class="language-json">      "ssh_username": "vagrant",
+      "ssh_wait_timeout": "10000s",
+      "vboxmanage": [
+        ["modifyvm", "{{.Name}}", "--memory", "1280"],
+        ["modifyvm", "{{.Name}}", "--cpus", "1"],
+        ["modifyvm", "{{.Name}}", "--vram", "12"]
+      ],
+      "vm_name": "{{user `c7_name`}}-{{user `stamp`}}"
+    },
+    {
+      "type": "docker",
+      "name": "centos-6",
+      "commit": true,
+      "image": "{{user `c6_docker_image`}}",
+      "pull": false
+    },
+    {
+      "type": "docker",
+      "name": "centos-7",
+      "commit": true,
+      "image": "{{user `c7_docker_image`}}",
+      "pull": false
+    }
+  ],
+  "post-processors": [
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer7" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/7">
+<pre class="highlight"><code class="language-json">    {
+      "type": "vagrant",
+      "only": ["centos-6-virtualbox", "centos-7-virtualbox"],
+      "compression_level": 9,
+      "keep_input_artifact": true,
+      "output": "builds/{{.BuildName}}-{{user `stamp`}}.box"
+    },
+    [
+      {
+        "type": "docker-tag",
+        "only": ["centos-6", "centos-7"],
+        "repository": "mkheironimus/{{build_name}}",
+        "tag": "{{user `stamp`}}"
+      },
+      {
+        "type": "docker-save",
+        "only": ["centos-6", "centos-7"],
+        "path": "builds/{{build_name}}-{{user `stamp`}}.tar"
+      }
+    ]
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "environment_vars": [
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer8" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/8">
+<pre class="highlight"><code class="language-json">        "HOME_DIR=/home/vagrant",
+        "http_proxy={{user `http_proxy`}}",
+        "https_proxy={{user `https_proxy`}}",
+        "no_proxy={{user `no_proxy`}}",
+        "VERBOSE={{user `verbose`}}"
+      ],
+      "override": {
+        "centos-6-virtualbox": {
+          "execute_command": "env {{.Vars}} sudo -S -E bash -eu '{{.Path}}'"
+        },
+        "centos-7-virtualbox": {
+          "execute_command": "env {{.Vars}} sudo -S -E bash -eu '{{.Path}}'"
+        }
+      },
+      "execute_command": "env {{.Vars}} bash -eu '{{.Path}}'",
+      "scripts": [
+        "shell/yum.sh",
+        "shell/docker_prep.sh",
+        "shell/grub.sh",
+        "shell/patch.sh"
+      ]
+    },
+    {
+      "type": "shell",
+      "pause_before": "10s",
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer9" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/9">
+<pre class="highlight"><code class="language-json">      "environment_vars": [
+        "HOME_DIR=/home/vagrant",
+        "http_proxy={{user `http_proxy`}}",
+        "https_proxy={{user `https_proxy`}}",
+        "no_proxy={{user `no_proxy`}}",
+        "VERBOSE={{user `verbose`}}"
+      ],
+      "override": {
+        "centos-6-virtualbox": {
+          "execute_command": "env {{.Vars}} sudo -S -E bash -eu '{{.Path}}'"
+        },
+        "centos-7-virtualbox": {
+          "execute_command": "env {{.Vars}} sudo -S -E bash -eu '{{.Path}}'"
+        }
+      },
+      "execute_command": "env {{.Vars}} bash -eu '{{.Path}}'",
+      "scripts": [
+        "shell/vmtools.sh",
+        "shell/vagrant.sh",
+        "shell/vm_ami_cleanup.sh",
+        "shell/cleanup.sh",
+        "shell/whiteout.sh"
+      ]
+    }
+  ],
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer10" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="packer/01_packer/10">
+<pre class="highlight"><code class="language-json">  "variables": {
+    "headless": "true",
+    "http_proxy": "{{env `http_proxy`}}",
+    "https_proxy": "{{env `https_proxy`}}",
+    "no_proxy": "{{env `no_proxy`}}",
+    "stamp": "{{isotime \"20060102\"}}",
+    "verbose": "true",
+    "c6_name": "centos-6",
+    "c6_iso_checksum": "c694ba4903ac2eb07d996ffa06b92d1dda78ec035d1ad87fdc9681e7245e7fc363eae987ec2476a408cf0bcaed0080ab05c7f26d7a9141eec8f898993c1057b1",
+    "c6_iso_path": "iso/CentOS-6.7-x86_64-bin-DVD1.iso",
+    "c6_ks_opts": "",
+    "c6_docker_image": "centos:6",
+    "c7_name": "centos-7",
+    "c7_iso_checksum": "3e084199713f0a7a39942a123ad698d36e0ee0a2253774e96c44a85df1574ed4ab6f7f13f52e778318902e59d7e0eb056b8557397946e1629119dec1b3b8d442",
+    "c7_iso_path": "iso/CentOS-7-x86_64-DVD-1511.iso",
+    "c7_ks_opts": "rd.live.check=0",
+    "c7_docker_image": "centos:7"
+  }
+}
+</code></pre>
+</div>
+</div>
+<div id="packer_01_packer11" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="packer/01_packer/11">
+<h1>Packer JSON is repetitious</h1>
+
+<ul>
+<li>If you put builders in the same file, you duplicate builders</li>
+<li>If you put builders in different files, you duplicate everything else</li>
+<li>Supports user-defined variables, but can not iterate</li>
+</ul>
+
+<div class="notes">
+
+<p>Builders run in parallel, so you may benefit from putting them together.</p>
+
+<p>Variables are also only usable in text fields, and not even in all of those.</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml1" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="yaml/01_yaml/1">
+<h1>Enter the YAML</h1>
+
+<ul>
+<li>Natural starting point: trivially converted to/from JSON</li>
+<li>Easy syntax, quotes only where needed</li>
+<li>Commenting</li>
+<li><a href="http://yaml.org/" target="_blank">http://yaml.org/</a></li>
+</ul>
+
+<div class="notes">
+
+<p>Worry about a nice file first, but how do you pick a new file format?</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml2" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="yaml/01_yaml/2">
+<h1>... buuuuut</h1>
+
+<ul>
+<li>Nested arrays look ugly</li>
+<li>Lots of Packer config still needs quotes</li>
+<li>Direct conversion is still repetitious</li>
+</ul>
+
+<div class="notes">
+
+<p>Packer does use nested arrays, most notably for ordering postprocessors.</p>
+
+<p>Remember when computers were going to save us from mundane repetitive tasks?</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml3" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="yaml/01_yaml/3">
+<h1>DRY it up</h1>
+
+<ul>
+<li>(Don't Repeat Yourself)</li>
+<li>Include other YAML files</li>
+<li>Initial attempt at some top-level global settings</li>
+</ul>
+
+<div class="notes">
+
+<p>For simplicity, includes can't be nested.</p>
+
+<p>Those global settings may go away. They don't do anything you can't do with
+includes.</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml4" class="slide smaller" data-transition="none">
+<div class="content smaller" ref="yaml/01_yaml/4">
+<pre class="highlight"><code class="language-yaml">---
+builders:
+  centos-6-virtualbox:
+    config_template:
+      - tmpl_vbox.yml
+      - tmpl_vbox_iso.yml
+    iso_url: iso/CentOS-6.7-x86_64-bin-DVD1.iso
+    boot_command:
+      - &lt;tab&gt; text ks=http://{{.HTTPIP}}:{{.HTTPPort}}/centos-6.ks&lt;enter&gt;&lt;wait&gt;
+    vm_name: "centos-6-{{user `stamp`}}"
+    iso_checksum: c694ba4903ac2eb07d996ffa06b92d1dda78ec035d1ad87fdc9681e7245e7fc363eae987ec2476a408cf0bcaed0080ab05c7f26d7a9141eec8f898993c1057b1
+  centos-7-virtualbox:
+    config_template:
+      - tmpl_vbox.yml
+      - tmpl_vbox_iso.yml
+    iso_url: iso/CentOS-7-x86_64-DVD-1511.iso
+    boot_command:
+      - &lt;tab&gt; text rd.live.check=0 ks=http://{{.HTTPIP}}:{{.HTTPPort}}/centos-7.ks&lt;enter&gt;&lt;wait&gt;
+    vm_name: "centos-7-{{user `stamp`}}"
+    iso_checksum: 3e084199713f0a7a39942a123ad698d36e0ee0a2253774e96c44a85df1574ed4ab6f7f13f52e778318902e59d7e0eb056b8557397946e1629119dec1b3b8d442
+  centos-6:
+    config_template: tmpl_docker_commit.yml
+    image: centos:6
+  centos-7:
+    config_template: tmpl_docker_commit.yml
+</code></pre>
+</div>
+</div>
+<div id="yaml_01_yaml5" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="yaml/01_yaml/5">
+<pre class="highlight"><code class="language-yaml">    image: centos:7
+provisioner_override:
+  centos-6:
+    execute_command: "env {{.Vars}} bash -eu '{{.Path}}'"
+  centos-7:
+    execute_command: "env {{.Vars}} bash -eu '{{.Path}}'"
+provisioners:
+  -
+    config_template: tmpl_shell.yml
+    scripts:
+      - shell/yum.sh
+      - shell/docker_prep.sh
+      - shell/grub.sh
+      - shell/patch.sh
+  -
+    config_template: tmpl_shell.yml
+    scripts:
+      - shell/vmtools.sh
+      - shell/vagrant.sh
+      - shell/vm_ami_cleanup.sh
+      - shell/cleanup.sh
+      - shell/whiteout.sh
+    pause_before: 10s
+post-processors:
+  -
+</code></pre>
+</div>
+</div>
+<div id="yaml_01_yaml6" class="slide smaller" data-transition="scrollUp">
+<div class="content smaller" ref="yaml/01_yaml/6">
+<pre class="highlight"><code class="language-yaml">    config_template: tmpl_vagrant.yml
+    only:
+      - centos-6-virtualbox
+      - centos-7-virtualbox
+  -
+    -
+      config_template: tmpl_docker_tag.yml
+      only:
+        - centos-6
+        - centos-7
+    -
+      config_template: tmpl_docker_save.yml
+      only:
+        - centos-6
+        - centos-7
+# defaults, to be overridden on command line or var file.
+variables: 
+  headless: "true"
+  http_proxy: "{{env `http_proxy`}}"
+  https_proxy: "{{env `https_proxy`}}"
+  no_proxy: "{{env `no_proxy`}}"
+  stamp: "{{isotime \"20060102\"}}"
+  verbose: "true"
+</code></pre>
+</div>
+</div>
+<div id="yaml_01_yaml7" class="slide " data-transition="none">
+<div class="content " ref="yaml/01_yaml/7">
+<h1>Builder Example</h1>
+
+<pre class="highlight"><code class="language-yaml">centos-6-virtualbox:
+  config_template:
+    - tmpl_vbox.yml
+    - tmpl_vbox_iso.yml
+  iso_url: iso/CentOS-6.7-x86_64-bin-DVD1.iso
+  boot_command:
+    - &lt;tab&gt; text ks=http://{{.HTTPIP}}:{{.HTTPPort}}/centos-6.ks&lt;enter&gt;&lt;wait&gt;
+  vm_name: "centos-6-{{user `stamp`}}"
+  iso_checksum: c694ba4903ac2eb07d996ffa06b92d1dda78ec035d1ad87fdc9681e7245e7fc363eae987ec2476a408cf0bcaed0080ab05c7f26d7a9141eec8f898993c1057b1</code></pre>
+
+<div class="notes">
+
+<p>Excerpt from the top-level YAML file.</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml8" class="slide small" data-transition="none">
+<div class="content small" ref="yaml/01_yaml/8">
+<pre class="highlight"><code class="language-yaml">output_directory: "builds/{{build_name}}-{{user `stamp`}}"
+ssh_password: vagrant
+ssh_wait_timeout: 10000s
+headless: "{{user `headless`}}"
+export_opts: 
+  - --manifest
+ssh_username: vagrant
+vboxmanage: 
+  - 
+    - modifyvm
+    - "{{.Name}}"
+    - --memory
+    - "1280"
+  - 
+    - modifyvm
+    - "{{.Name}}"
+    - --cpus
+    - "1"
+  - 
+    - modifyvm
+    - "{{.Name}}"
+    - --vram
+    - "12"
+shutdown_command: echo 'vagrant' | sudo -S /sbin/halt -h -p</code></pre>
+
+<div class="notes">
+
+<p>tmpl_vbox.yml, common to both ISO and OVF VirtualBox builders.</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml9" class="slide " data-transition="none">
+<div class="content " ref="yaml/01_yaml/9">
+<pre class="highlight"><code class="language-yaml"># Overlay for tmpl_vbox.yml
+type: virtualbox-iso
+http_directory: http
+hard_drive_interface: sata
+guest_os_type: RedHat_64
+guest_additions_path: VBoxGuestAdditions_{{.Version}}.iso
+disk_size: 8192
+iso_checksum_type: sha512</code></pre>
+
+<div class="notes">
+
+<p>tmpl_vbox_iso.yml, second template in the list.</p>
+
+</div>
+</div>
+</div>
+<div id="yaml_01_yaml10" class="slide " data-transition="none">
+<div class="content " ref="yaml/01_yaml/10">
+<pre class="highlight"><code class="language-yaml">centos-6-virtualbox:
+  config_template:
+    - tmpl_vbox.yml
+    - tmpl_vbox_iso.yml
+  iso_url: iso/CentOS-6.7-x86_64-bin-DVD1.iso
+  boot_command:
+    - &lt;tab&gt; text ks=http://{{.HTTPIP}}:{{.HTTPPort}}/centos-6.ks&lt;enter&gt;&lt;wait&gt;
+  vm_name: "centos-6-{{user `stamp`}}"
+  iso_checksum: c694ba4903ac2eb07d996ffa06b92d1dda78ec035d1ad87fdc9681e7245e7fc363eae987ec2476a408cf0bcaed0080ab05c7f26d7a9141eec8f898993c1057b1</code></pre>
+
+<div class="notes">
+
+<p>Everything but config_template is layered on top, and the name is moved in to
+the "name" key.</p>
+
+<p>Builders run in parallel so the order doesn't matter, so they can be named in
+the YAML. Provisioners and postprocessors require a specific order, so they
+would need a sort key.</p>
+
+</div>
+</div>
+</div>
+<div id="perl_01_perl1" class="slide bullets" data-transition="none">
+<div class="content bullets" ref="perl/01_perl/1">
+<h1>The Script</h1>
+
+<ul>
+<li>Minimal testing, but It Works For Me (TM)</li>
+<li>No error handling
+
+<ul>
+<li>Perl will tell you if files can't be read or written</li>
+<li>YAMLish will complain if the input is not valid YAML</li>
+<li>Packer will tell you if the JSON output is wrong</li>
+</ul>
+</li>
+</ul>
+
+<div class="notes">
+
+<p>At this stage error handling is more of a "neatness counts" thing than a real
+need. Plus I'm still in the "how does this work/look" stage with Perl 6.</p>
+
+<p>YAMLish doesn't say what's wrong, just that parsing failed.</p>
+
+<p>Since the script does almost no transformation, you can use Packer's error on
+your YAML just as well as on the JSON.</p>
+
+</div>
+</div>
+</div>
+<div id="perl_01_perl2" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="perl/01_perl/2">
+<h1>Perls of Wisdom</h1>
+
+<ul>
+<li>Rakudo Star ships with JSON::Tiny</li>
+<li>JSON::Pretty gives you formatted output</li>
+<li>YAML is unfinished, so use YAMLish</li>
+</ul>
+
+<div class="notes">
+
+<p>Lessons learned.</p>
+
+<p>JSON::Tiny should work, but it's untested.</p>
+
+</div>
+</div>
+</div>
+<div id="perl_01_perl3" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="perl/01_perl/3">
+<h1>Modules, you say?</h1>
+
+<ul>
+<li>Modules you expect to use may be unfinished</li>
+<li>Documentation / examples may be lacking</li>
+<li>YAMLish output fails to quote some strings</li>
+</ul>
+
+<div class="notes">
+
+<p>You can't yet assume that everything will "just work" in Perl 6.</p>
+
+<p>I filed an issue on github about quoting numeric strings and the YAMLish author
+said he needed to have it quote a lot more, and that output was generally less
+mature than input.</p>
+
+</div>
+</div>
+</div>
+<div id="perl_01_perl4" class="slide " data-transition="none">
+<div class="content " ref="perl/01_perl/4">
+<h1>Building a YAML starting point</h1>
+
+<pre class="hilight">
+
+<code class="hljs"><span class="PreProc">use</span> <span class="Normal">JSON</span>::<span class="Normal">Pretty</span><span class="Statement">;</span>
+<span class="PreProc">use</span> <span class="Normal">YAMLish</span><span class="Statement">;</span>
+
+<span class="Special">my</span> <span class="Identifier">$</span><span class="Identifier">f</span> <span class="Statement">=</span> <span class="Identifier">slurp</span>(<span class="Special">'</span><span class="Constant">centos.json</span><span class="Special">'</span>)<span class="Statement">;</span>
+<span class="Special">my</span> <span class="Identifier">$</span><span class="Identifier">cfg</span> <span class="Statement">=</span> <span class="Normal">from-json</span>(<span class="Identifier">$</span><span class="Identifier">f</span>)<span class="Statement">;</span>
+<span class="Special">my</span> <span class="Identifier">$</span><span class="Identifier">yaml</span> <span class="Statement">=</span> <span class="Normal">save-yaml</span>(<span class="Identifier">$</span><span class="Identifier">cfg</span>)<span class="Statement">;</span>
+<span class="Identifier">say</span> <span class="Identifier">$</span><span class="Identifier">yaml</span><span class="Statement">;</span>
+</code></pre>
+
+<div class="notes">
+
+<p>Done for the initial file, but don't forget the quoting problem.</p>
+
+</div>
+</div>
+</div>
+<div id="perl_02_packergen1" class="slide small" data-transition="none">
+<div class="content small" ref="perl/02_packergen/1">
+<pre class="hilight">
+
+<code class="hljs"><span class="PreProc">use</span> <span class="Statement">v6;</span>
+
+<span class="PreProc">use</span> <span class="Normal">JSON</span>::<span class="Normal">Pretty</span><span class="Statement">;</span>
+<span class="PreProc">use</span> <span class="Normal">YAMLish</span><span class="Statement">;</span>
+
+<span class="Statement">class</span> <span class="Normal">PackerGen</span> {
+    <span class="Special">has</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span> <span class="Statement">=</span> ()<span class="Statement">;</span>
+    <span class="Special">has</span> <span class="Identifier">%</span><span class="Special">.</span><span class="Identifier">output</span> <span class="Statement">=</span> ()<span class="Statement">;</span>
+
+    <span class="Comment"># Constructor taking an optional input file, not inherited.</span>
+    <span class="Statement">submethod</span> <span class="Normal">BUILD</span>(<span class="Type">Str</span> <span class="Statement">:</span><span class="Identifier">$</span><span class="Identifier">yaml</span><span class="Statement">=</span><span class="Special">''</span>) {
+        <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">load</span>(<span class="Identifier">$</span><span class="Identifier">yaml</span>)<span class="Statement">;</span>
+        <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">generate</span>()<span class="Statement">;</span>
+    }
+
+    <span class="Comment"># Load a YAML file from stdin or the named file.</span>
+    <span class="Statement">method</span> <span class="Normal">load</span>(<span class="Type">Str</span> <span class="Identifier">$</span><span class="Identifier">in</span>) {
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span> <span class="Statement">=</span> <span class="Normal">load-yaml</span>((<span class="Identifier">$</span><span class="Identifier">in</span> <span class="Statement">ne</span> <span class="Special">''</span>) <span class="Statement">??</span> <span class="Identifier">slurp</span>(<span class="Identifier">$</span><span class="Identifier">in</span>)
+                <span class="Statement">!!</span> <span class="Identifier">$</span><span class="Special">*</span><span class="Identifier">IN</span><span class="Statement">.</span><span class="Normal">slurp-rest</span>)<span class="Statement">;</span>
+    }
+</code></pre>
+</div>
+</div>
+<div id="perl_02_packergen2" class="slide small" data-transition="none">
+<div class="content small" ref="perl/02_packergen/2">
+<pre class="hilight">
+
+<code class="hljs">    <span class="Comment"># Write the generated JSON to stdout or the given filename.</span>
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">save</span>(<span class="Type">Str</span> <span class="Identifier">$</span><span class="Identifier">out</span> <span class="PreProc">where</span> { <span class="Identifier">$</span><span class="Identifier">out</span> <span class="Statement">eq</span> <span class="Special">''</span> }) {
+        <span class="Identifier">say</span> <span class="Normal">to-json</span>(<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span>)<span class="Statement">;</span>
+    }
+
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">save</span>(<span class="Type">Str</span> <span class="Identifier">$</span><span class="Identifier">out</span>) {
+        <span class="Comment"># to-json doesn't have a final newline</span>
+        <span class="Normal">spurt</span>(<span class="Identifier">$</span><span class="Identifier">out</span><span class="Statement">,</span> <span class="Normal">to-json</span>(<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span>) <span class="Statement">~</span> <span class="Special">"</span><span class="Special">\n</span><span class="Special">"</span>)<span class="Statement">;</span>
+    }
+
+    <span class="Comment"># If a config_template element exists, load that content and</span>
+    <span class="Comment"># overlay the supplied data. Otherwise just return the data.</span>
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">expand_entry</span>(<span class="Identifier">%</span><span class="Identifier">data</span>
+            <span class="PreProc">where</span> { <span class="Identifier">%</span><span class="Identifier">data</span><span class="Special">&lt;</span><span class="Constant">config_template</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span> } <span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Special">my</span> <span class="Identifier">%</span><span class="Identifier">new</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Identifier">data</span><span class="Special">&lt;</span><span class="Constant">config_template</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">delete</span><span class="Statement">.</span><span class="Identifier">map</span>({
+                <span class="Normal">load-yaml</span>(<span class="Identifier">slurp</span>(<span class="Identifier">$</span><span class="Special">^</span><span class="Identifier">a</span>)) })<span class="Statement">;</span>
+        <span class="Statement">%</span>(<span class="Identifier">%</span><span class="Identifier">new</span><span class="Statement">,</span> <span class="Identifier">%</span><span class="Identifier">data</span>)<span class="Statement">;</span>
+    }
+
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">expand_entry</span>(<span class="Identifier">%</span><span class="Identifier">data</span> <span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Identifier">%</span><span class="Identifier">data</span><span class="Statement">;</span>
+    }
+</code></pre>
+</div>
+</div>
+<div id="perl_02_packergen3" class="slide small" data-transition="none">
+<div class="content small" ref="perl/02_packergen/3">
+<pre class="hilight">
+
+<code class="hljs">    <span class="Comment"># Process templates and add the name key.</span>
+    <span class="Statement">method</span> <span class="Normal">build</span>(<span class="Type">Pair</span> (<span class="Statement">:</span><span class="Constant">key</span>(<span class="Statement">:</span><span class="Identifier">$</span><span class="Identifier">name</span>)<span class="Statement">,</span> <span class="Statement">:</span><span class="Constant">value</span>(<span class="Statement">:</span><span class="Identifier">$</span><span class="Identifier">data</span>)) <span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Statement">%</span>(<span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">expand_entry</span>(<span class="Identifier">$</span><span class="Identifier">data</span>)<span class="Statement">,</span> <span class="Special">'</span><span class="Constant">name</span><span class="Special">'</span> <span class="Statement">=&gt;</span> <span class="Identifier">$</span><span class="Identifier">name</span>)<span class="Statement">;</span>
+    }
+
+    <span class="Comment"># Process templates and add the global override definition if</span>
+    <span class="Comment"># there is no override in the provisioner.</span>
+    <span class="Statement">method</span> <span class="Normal">provision</span>(<span class="Identifier">%</span><span class="Identifier">prov</span> <span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Special">my</span> <span class="Identifier">%</span><span class="Identifier">new</span> <span class="Statement">=</span> <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">expand_entry</span>(<span class="Identifier">%</span><span class="Identifier">prov</span>)<span class="Statement">;</span>
+        <span class="Statement">if</span> (<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">provisioner_override</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span> <span class="Statement">&amp;&amp;</span>
+                <span class="Statement">!</span>(<span class="Identifier">%</span><span class="Identifier">prov</span><span class="Special">&lt;</span><span class="Constant">override</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span>)) {
+            <span class="Identifier">%</span><span class="Identifier">new</span><span class="Special">&lt;</span><span class="Constant">override</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">provisioner_override</span><span class="Special">&gt;</span><span class="Statement">;</span>
+        }
+        <span class="Identifier">%</span><span class="Identifier">new</span><span class="Statement">;</span>
+    }
+
+    <span class="Comment"># Process templates for a sequence or a single postprocessor.</span>
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">postproc</span>(<span class="Identifier">@</span><span class="Identifier">post</span> <span class="Statement">--&gt;</span> <span class="Type">Seq</span>) {
+        <span class="Identifier">@</span><span class="Identifier">post</span><span class="Statement">.</span><span class="Identifier">map</span>({ <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">expand_entry</span>(<span class="Identifier">%</span><span class="Special">^</span><span class="Identifier">a</span>) })<span class="Statement">;</span>
+    }
+
+    <span class="Statement">multi</span> <span class="Statement">method</span> <span class="Normal">postproc</span>(<span class="Identifier">%</span><span class="Identifier">post</span> <span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">expand_entry</span>(<span class="Identifier">%</span><span class="Identifier">post</span>)<span class="Statement">;</span>
+    }
+</code></pre>
+</div>
+</div>
+<div id="perl_02_packergen4" class="slide small" data-transition="none">
+<div class="content small" ref="perl/02_packergen/4">
+<pre class="hilight">
+
+<code class="hljs">    <span class="Statement">method</span> <span class="Normal">generate</span>(<span class="Statement">--&gt;</span> <span class="Type">Hash</span>) {
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Special">&lt;</span><span class="Constant">builders</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">builders</span><span class="Special">&gt;</span><span class="Statement">.</span><span class="Identifier">map</span>({
+                <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">build</span>(<span class="Identifier">$</span><span class="Special">^</span><span class="Identifier">a</span>) })<span class="Statement">;</span>
+
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Special">&lt;</span><span class="Constant">provisioners</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">provisioners</span><span class="Special">&gt;</span><span class="Statement">.</span><span class="Identifier">map</span>({
+            <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">provision</span>(<span class="Identifier">$</span><span class="Special">^</span><span class="Identifier">a</span>) })
+              <span class="Statement">if</span> (<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">provisioners</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span>)<span class="Statement">;</span>
+
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Special">&lt;</span><span class="Constant">post-processors</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">post-processors</span><span class="Special">&gt;</span><span class="Statement">.</span><span class="Identifier">map</span>({
+            <span class="Identifier">self</span><span class="Statement">.</span><span class="Normal">postproc</span>(<span class="Identifier">$</span><span class="Special">^</span><span class="Identifier">a</span>) })
+              <span class="Statement">if</span> (<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">post-processors</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span>)<span class="Statement">;</span>
+
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Special">&lt;</span><span class="Constant">description</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">description</span><span class="Special">&gt;</span>
+            <span class="Statement">if</span> (<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">description</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span>)<span class="Statement">;</span>
+
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Special">&lt;</span><span class="Constant">variables</span><span class="Special">&gt;</span> <span class="Statement">=</span> <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">variables</span><span class="Special">&gt;</span>
+            <span class="Statement">if</span> (<span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">cfg</span><span class="Special">&lt;</span><span class="Constant">variables</span><span class="Special">&gt;</span><span class="Statement">:</span><span class="Constant">exists</span>)<span class="Statement">;</span>
+
+        <span class="Identifier">%</span><span class="Special">!</span><span class="Identifier">output</span><span class="Statement">;</span>
+    }
+
+}
+</code></pre>
+</div>
+</div>
+<div id="perl_02_packergen5" class="slide small" data-transition="none">
+<div class="content small" ref="perl/02_packergen/5">
+<pre class="hilight">
+
+<code class="hljs"><span class="Comment"># --in=input.yaml --out=output.json</span>
+<span class="Statement">sub</span> <span class="Normal">MAIN</span>(<span class="Type">Str</span> <span class="Statement">:</span><span class="Identifier">$</span><span class="Identifier">in</span><span class="Statement">=</span><span class="Special">''</span><span class="Statement">,</span> <span class="Type">Str</span> <span class="Statement">:</span><span class="Identifier">$</span><span class="Identifier">out</span><span class="Statement">=</span><span class="Special">''</span>) {
+    <span class="Special">my</span> <span class="Identifier">$</span><span class="Identifier">pg</span> <span class="Statement">=</span> <span class="Normal">PackerGen</span><span class="Statement">.</span><span class="Identifier">new</span>(<span class="Constant">yaml</span> <span class="Statement">=&gt;</span> <span class="Identifier">$</span><span class="Identifier">in</span>)<span class="Statement">;</span>
+    <span class="Identifier">$</span><span class="Identifier">pg</span><span class="Statement">.</span><span class="Normal">save</span>(<span class="Identifier">$</span><span class="Identifier">out</span>)<span class="Statement">;</span>
+}
+</code></pre>
+</div>
+</div>
+<div id="closing_01_closing1" class="slide bullets incremental" data-transition="none">
+<div class="content bullets incremental" ref="closing/01_closing/1">
+<h1>Many possible futures</h1>
+
+<ul>
+<li>Search path for template files</li>
+<li>More advanced dynamic templating</li>
+<li>Support other tools - AWS and HashiCorp love JSON, I don't</li>
+<li>Full tool wrapper / DSL where it's useful</li>
+</ul>
+
+<div class="notes">
+
+<p>"Dynamic templating" means more advanced variable expansions, macros, etc.</p>
+
+<p>People have written lots of similar tools for CloudFormation, but AWS uses JSON
+all over the place.</p>
+
+<p>Some people throw around the term "DSL" really freely. Here it means a real
+workflow configuration language (maybe using a Grammar), not just JSON or Ruby
+with a library.</p>
+
+</div>
+</div>
+</div>
+<div id="closing_01_closing2" class="slide " data-transition="none">
+<div class="content " ref="closing/01_closing/2">
+<h1>That's all, folks!</h1>
+
+<p><a href="https://github.com/mkheironimus/packergen" target="_blank">https://github.com/mkheironimus/packergen</a></p>
+
+<p><a href="https://mkheironimus.github.io/slides/20160316-packergen.pdf" target="_blank">https://mkheironimus.github.io/slides/20160316-packergen.pdf</a></p>
+
+<div class="notes">
+
+<p>Code and presentation available online.</p>
+
+<p>Pause for questions, comments, and tomatoes.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div id="pauseScreen">
+  PAUSED
+</div>
+
+</body>
+</html>

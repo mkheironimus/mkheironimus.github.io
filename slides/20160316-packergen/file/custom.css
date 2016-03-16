@@ -1,0 +1,15 @@
+/* Don't style links. */
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/* vim hilighting */
+.Type { color: #2e8b57; font-weight: bold; }
+.Normal { color: #000000; padding-bottom: 1px; }
+.Statement { color: #a52a2a; font-weight: bold; }
+.Comment { color: #0000ff; }
+.Constant { color: #ff00ff; padding-bottom: 1px; }
+.Special { color: #6a5acd; padding-bottom: 1px; }
+.PreProc { color: #800080; }
+.Identifier { color: #008b8b; }
