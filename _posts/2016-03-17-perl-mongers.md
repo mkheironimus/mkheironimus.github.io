@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Perl Mongers
-categories:
-- talks
+tags:
+- slides
 - perl
 ---
 
