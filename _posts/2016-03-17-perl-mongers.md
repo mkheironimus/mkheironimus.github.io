@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Perl Mongers
-categories: talks, perl
+categories: talks,perl
 ---
 
 Did a little talk at [St Louis Perl
