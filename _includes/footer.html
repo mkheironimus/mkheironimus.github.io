@@ -26,6 +26,12 @@
           </li>
           {% endif %}
 
+          {% if site.imgur_username %}
+          <li>
+            {% include icon-imgur.html username=site.imgur_username %}
+          </li>
+          {% endif %}
+
           {% if site.instagram_username %}
           <li>
             {% include icon-instagram.html username=site.instagram_username %}
