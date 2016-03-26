@@ -7,3 +7,14 @@ url: "https://mkheironimus.github.io" # root URL
 github_username: mkheironimus
 twitter_username: mkheironimus
 instagram_username: mkheironimus
+gems: # coffeescript and paginate plugins are default for github pages
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# seo-tag plugin - twitter handle
+author: mkheironimus
+twitter:
+  username: mkheironimus
