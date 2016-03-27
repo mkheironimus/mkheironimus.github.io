@@ -8,6 +8,7 @@ github_username: mkheironimus
 twitter_username: mkheironimus
 instagram_username: mkheironimus
 imgur_username: mkheironimus
+linkedin_profile: mkheironimus # Appended to "https://www.linkedin.com/in/"
 gems: # coffeescript and paginate plugins are default for github pages
   - jekyll-coffeescript
   - jekyll-paginate
