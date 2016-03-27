@@ -1,5 +1,7 @@
 User-agent: *
+Disallow: /404.html
 Disallow: /css/
 Disallow: /feed.xml
+Disallow: /img/
 Disallow: /rss.xml
 Disallow: /slides/

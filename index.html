@@ -18,6 +18,11 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe via <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Atom</a> or <a href="{{ "/rss.xml" | prepend: site.baseurl }}">RSS</a></p>
+  <p class="rss-subscribe">
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img alt="Atom"
+       src="{{ "/img/xml_atom_10.png" | prepend: site.baseurl }}"/></a>
+    <a href="{{ "/rss.xml" | prepend: site.baseurl }}"><img alt="RSS"
+       src="{{ "/img/xml_rss_20.png" | prepend: site.baseurl }}"/></a>
+  </p>
 
 </div>
