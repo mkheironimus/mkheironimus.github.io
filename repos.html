@@ -10,7 +10,7 @@ layout: default
 
   <ul class="post-list">
     {% for repo in site.github.public_repositories %}
-      <li><a class="post-link" href="{{ repo.html_url }}">{{ repo.name }}</a>
+      <li><a href="{{ repo.html_url }}">{{ repo.name }}</a>
           - {{ repo.description }}</li>
     {% endfor %}
   </ul>
