@@ -6,15 +6,15 @@ layout: default
 
   <h1 class="page-heading">Public Repositories</h1>
 
-  <p><a href="https://github.com/{{ include.username }}">{{ include.username }}</a></p>
+  <p><a href="https://github.com/{{ site.github_username }}">https://github.com/{{ site.github_username }}</a></p>
 
   <ul class="post-list">
     {% for repo in site.github.public_repositories %}
       <li>
+        <span class="post-meta">{{ repo.description }}</span>
         <h2>
           <a class="post-link" href="{{ repo.html_url }}">{{ repo.name }}</a>
         </h2>
-        <span class="post-meta">{{ repo.description }}</span>
       </li>
     {% endfor %}
   </ul>
