@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Public Repositories</h1>
+
+  <p><a href="https://github.com/{{ include.username }}">{{ include.username }}</a></p>
+
+  <ul class="post-list">
+    {% for repo in site.github.public_repositories %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ repo.html_url }}">{{ repo.name }}</a>
+        </h2>
+        <span class="post-meta">{{ repo.description }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
