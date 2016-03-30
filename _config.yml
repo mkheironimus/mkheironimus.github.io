@@ -1,9 +1,13 @@
 title: Michael Heironimus
 email: heironimus@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Michael Heironimus's public technology work.
+  Michael Heironimus's public technology work and general ramblings.
 baseurl: "" # path under the root if you're in a subdir
 url: "https://mkheironimus.github.io" # root URL
+timezone: America/Chicago
+exclude:
+  - newpost.sh
+  - README.md
 github_username: mkheironimus
 twitter_username: mkheironimus
 instagram_username: mkheironimus
@@ -18,6 +22,12 @@ gems: # coffeescript and paginate plugins are default for github pages
   - jekyll-sitemap
 
 # seo-tag plugin - twitter handle
-author: mkheironimus
 twitter:
   username: mkheironimus
+
+#defaults:
+#  -
+#    scope:
+#      path: ""
+#    values:
+#      author: mkheironimus
