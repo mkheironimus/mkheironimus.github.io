@@ -1,0 +1,14 @@
+---
+layout: default
+#title:  Tags
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts by Tag</h1>
+
+  {% include tag-list.html title="Perl" posts=site.tags.perl %}
+
+  {% include tag-list.html title="Slides" posts=site.tags.slides %}
+
+</div>
