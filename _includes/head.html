@@ -3,13 +3,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
   <link rel="icon" type="image/png" href="{{ "/img/icon_16.png" | prepend: site.baseurl }}" sizes="16x16" />
   <link rel="icon" type="image/png" href="{{ "/img/icon_32.png" | prepend: site.baseurl }}" sizes="32x32" />
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/rss.xml" | prepend: site.baseurl | prepend: site.url }}" />
 {% feed_meta %}
-{% seo title=false %}
+{% seo %}
 </head>
