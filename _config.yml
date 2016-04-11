@@ -21,13 +21,20 @@ gems: # coffeescript and paginate plugins are default for github pages
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# seo-tag plugin - twitter handle
+# seo-tag plugin - twitter handle and social media links
 twitter:
   username: mkheironimus
 
-#defaults:
-#  -
-#    scope:
-#      path: ""
-#    values:
-#      author: mkheironimus
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+#     author: mkheironimus
+      seo:
+        links:
+          - https://www.linkedin.com/in/mkheironimus
+          - https://twitter.com/mkheironimus
+#         - https://plus.google.com/109124198906391000400
+#         - http://mkheironimus.imgur.com/
+#         - https://www.instagram.com/mkheironimus/
