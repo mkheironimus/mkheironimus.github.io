@@ -91,3 +91,8 @@ Are you using external PostgreSQL with Chef Server? Hit me up on Twitter
 I'm paying attention and don't get distracted by a bright shiny object I might
 even respond.
 
+## Update 2016-04-11
+
+I motivated myself and wrote my notes on [using Chef Server with Amazon RDS]({%
+post_url 2016-04-11-connecting-chef-server-to-amazon-rds %}).
+
