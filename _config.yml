@@ -10,10 +10,10 @@ exclude:
   - README.md
 github_username: mkheironimus
 twitter_username: mkheironimus
-instagram_username: mkheironimus
-imgur_username: mkheironimus
+#instagram_username: mkheironimus
+#imgur_username: mkheironimus
 linkedin_profile: mkheironimus # Appended to "https://www.linkedin.com/in/"
-gplus_profile: 109124198906391000400 # Appended to "https://plus.google.com/"
+#gplus_profile: 109124198906391000400 # Appended to "https://plus.google.com/"
 gems: # coffeescript and paginate plugins are default for github pages
   - jekyll-coffeescript
   - jekyll-paginate
