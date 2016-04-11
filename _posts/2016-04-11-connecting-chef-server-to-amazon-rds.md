@@ -100,3 +100,9 @@ There is no specific migration tool between the embedded Postgres and an
 external database. You will need to use `knife ec` to backup from one and
 restore to the other.
 
+## Feedback?
+
+Comments welcome. Best channels are probably Twitter
+[@mkheironimus](https://twitter.com/mkheironimus) or email
+[heironimus@gmail.com](mailto:heironimus@gmail.com).
+
