@@ -6,11 +6,11 @@ tags:
   - chef
 ---
 
-Starting from version 12.2.0, released in September 2015, [Chef
-Server](https://www.chef.io/) supports running with an external
-[PostgreSQL](http://www.postgresql.org/) server instead of using the server
-embedded in the package. I've done some work at the day job on installing Chef
-with external PostgreSQL, so I decided that I should record my findings for
+Starting from version 12.2.0, released in September 2015, [Chef 
+Server](https://www.chef.io/) supports running with an external 
+[PostgreSQL](http://www.postgresql.org/) server instead of using the server 
+embedded in the package. I've done some work at the day job on installing Chef 
+with external PostgreSQL, so I decided that I should record my findings for 
 posterity.
 
 Starting with some background....
