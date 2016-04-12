@@ -1,6 +1,6 @@
 <h2>{{ include.title }}</h2>
 <ul class="post-list">
-  {% assign posts = include.posts | sort:"date" %}
+  {% assign posts = include.posts | sort:"date" | reverse %}
   {% for p in posts %}
     <li><span class="post-meta">{{ p.date | date:"%Y-%m-%d" }}</span>
     <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
