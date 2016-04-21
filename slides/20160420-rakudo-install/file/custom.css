@@ -1,0 +1,50 @@
+/* Make slides a little smaller so they really fit in 1024x768. */
+#preso, .slide {
+	width: 1014px !important;
+	height: 758px !important;
+}
+
+/* Make font large enough to hopefully be readable. */
+.slide {
+	font-size: 2.2em;
+}
+
+/* Don't style links. */
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/* Make Camelia logo float on the right side of the text. */
+.content > .logo {
+	float: right;
+	max-width: 100%;
+}
+
+/* Standard slide footer. */
+
+/* Don't display the footer for "title" slides. */
+.title > .slide-footer {
+	display: none;
+}
+
+.content > .slide-footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.content .slide-info {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: -webkit-calc(50% - 30px);
+	width: calc(50% - 30px);
+	font-size: 50%;
+}
+.content .slide-info-left {
+	text-align: left;
+}
+.content .slide-info-right {
+	text-align: right;
+}
